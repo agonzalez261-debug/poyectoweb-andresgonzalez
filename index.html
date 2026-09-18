@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="es-MX">
+    <head><!--AQUI VIENE LOS METADATOS Y LA CONEXION AL STYLE-->
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="author" content="Andres gonzalez velarde">
+        <meta name="description" content="es un diseño de un carrito de compras para una EsTech">
+         <meta name="keywords" content="Expertis en el septimo y glorioso arte cuidamos el cine y a los
+         aspirantes que sueñan con un puesto en la industria brindando un espacio donde
+         todos pdamos apreciar el cine y la cultura cinematografica">
+         <!--- ES EL TITULO DE LA PAGINA WEB-->
+         <title>Carrito de compras-CINEMA></title>
+         <!-- ENLAZA CON LA HOJA DE ESTILOS-->
+         <link rel="stylesheet" href="style.css">
+
+         <script src="https://cdn.tailwindcss.com/3.4.17"></script>
+    <script src="https://cdn.jsdelivr.net/npm/lucide@0.577.0/dist/umd/lucide.min.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&amp;family=Fraunces:opsz,wght@9..144,600;9..144,700&amp;display=swap" rel="stylesheet">
+    </head>
+<body class="paper-texture">
+    </head>
+
+</html>
+
+
+<!---encabezado-->
+</header class="header">
+    <div class="container header-inner">
+         <a href="#inicio" class="logo">
+        <span class="logo-icon">🍿</span>
+        CINEMA
+      </a>
+      <nav class="main-nav">
+        <ul>
+          <li><a href="#inicio">inicio</a></li>
+          <li><a href="#productos">Peliculas</a></li>
+          <li><a href="#beneficios">movimientos</a></li>
+          <li><a href="#oferta">Oportunidades</a></li>
+          <li><a href="#contacto">Contacto</a></li>
+        </ul>
+        <button type="button" class="btn primary" onclick="openWhatsApp('Hola, quiero hacer un pedido en Dulce Detalle.')">
+          <i data-lucide="message-circle"></i> Pedir ahora
+        </button>
+      </nav>
+      <button id="menu-toggle" class="menu-toggle" aria-label="Abrir menú" aria-expanded="false" aria-controls="mobile-menu">☰</button>
+    </div>
+    <nav id="mobile-menu" class="mobile-nav"></nav>
+            <ul>
+          <li><a href="#inicio">inicio</a></li>
+          <li><a href="#productos">Peliculas</a></li>
+          <li><a href="#beneficios">movimientos</a></li>
+          <li><a href="#oferta">Oportunidades</a></li>
+          <li><a href="#contacto">Contacto</a></li>
+        </ul>
+         <button type="button" class="btn primary" onclick="openWhatsApp('Hola, quiero hacer un pedido en Dulce Detalle.')">
+        <i data-lucide="message-circle"></i> Pedir ahora
+      </button>
+      </nav>
+    </header>
+    </main>
+    <!-- ================= HERO ================= -->
+    <section id="inicio" class="hero">
+      <div class="container hero-inner">
+        <div class="hero-text reveal">
+          <p class="eyebrow">Peliculas que nos iluminan la vida</p>
+          <h1>Tu pelicula vive en nosotros</h1>
+          <p class="lead">Apreciamos la calidad y aqui si vivimos de los sueños .</p>
+          <div class="hero-actions">
+            <a href="#productos" class="btn primary">Ver productos</a>
+            <button type="button" class="btn outline" onclick="openWhatsApp('Hola, vi su página y me gustaría conocer sus regalos personalizados.')">Comprar por WhatsApp</button>
+          </div>
+          <p class="trust"><i data-lucide="heart"></i> Más de 200 detalles entregados</p>
+        </div>
+        <div class="hero-image reveal">
+          <img src="4.jpg" alt="ENCONTRAMOS LA CONVIVENCIA EN VIVIRLA EN LA GRAN PANTALLA.">
+          <span class="tag tag-love">Hecho para los cineastas</span>
+          <span class="tag tag-custom">Proyectos personalizados</span>
+        </div>
+      </div>
+    </section>
+    <!-- ================= PRODUCTOS ================= -->
+    <section id="productos" class="products">
+      <div class="container">
+        <div class="section-heading reveal">
+          <p class="eyebrow">CINE INEDITO</p>
+          <h2>CONOCE NUESTRAS PRODUCCIONES</h2>
+          <p class="lead">INSPIRANOS POR TU FORMA DE VER EL MUNDO.</p>
+        </div>
+        <div class="product-grid">
+          <article class="product-card reveal">
+            <img src="7.jpg" alt="CONOCE NUESTRAS SALAS PARA DIFUNDIR LOS FILMES.">
+            <div class="product-body">
+              <span class="tag">Favorito</span>
+              <h3>Sala especializada</h3>
+              <p class="price">$349 MXN</p>
+              <p class="description">Una forma de ver el cine independiente junto con las grandes funciones.</p>
+              <button type="button" class="btn card" onclick="openModal('modal-sala')">Ver sala</button>
+            </div>
+          </article>
+          <article class="product-card reveal">
+            <img src="8.jpg" alt="Velas artesanales en frascos de vidrio ámbar.">
+            <div class="product-body">
+              <span class="tag">Aromático</span>
+              <h3>Vela Momento</h3>
+              <p class="price">$189 MXN</p>
+              <p class="description">Aroma suave y presentación artesanal para crear un momento especial.</p>
+              <button type="button" class="btn card" onclick="openModal('modal-vela')">Ver producto</button>
+            </div>
+          </article>
+          <article class="product-card reveal">
+            <img src="9.jpg" alt="Taza floral personalizada para regalo.">
+            <div class="product-body">
+              <span class="tag">Personalizable</span>
+              <h3>Taza Personalizada</h3>
+              <p class="price">$229 MXN</p>
+              <p class="description">Tu frase, nombre o mensaje favorito en una taza hecha para sonreír.</p>
+              <button type="button" class="btn card" onclick="openModal('modal-taza')">Ver producto</button>
+            </div>
+          </article>
+          <article class="product-card reveal">
+            <img src="10.jpg" alt="Suculentas decorativas envueltas para regalo.">
+            <div class="product-body">
+              <span class="tag">Vida verde</span>
+              <h3>Mini Jardín</h3>
+              <p class="price">$279 MXN</p>
+              <p class="description">Suculenta, maceta decorada y un detalle verde que dura.</p>
+              <button type="button" class="btn card" onclick="openModal('modal-jardin')">Ver producto</button>
+            </div>
+          </article>
+          <article class="product-card reveal">
+            <img src="1.jpg" alt="Regalos y postres coloridos para celebración de cumpleaños.">
+            <div class="product-body">
+              <span class="tag">Para celebrar</span>
+              <h3>Kit Cumpleaños</h3>
+              <p class="price">$429 MXN</p>
+              <p class="description">Todo listo para celebrar con dulzura, color y personalidad.</p>
+              <button type="button" class="btn card" onclick="openModal('modal-kit')">Ver producto</button>
+            </div>
+          </article>
+          <article class="product-card reveal">
+            <img src="3.jpg" alt="J.">
+            <div class="product-body">
+              <span class="tag">Pequeño gran detalle</span>
+              <h3>Tarjeta con Flores</h3>
+              <p class="price">$159 MXN</p>
+              <p class="description">Un mensaje especial acompañado de flores secas y mucho encanto.</p>
+              <button type="button" class="btn card" onclick="openModal('modal-tarjeta')">Ver producto</button>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+    <!-- ================= LOGICA DEL SITIO ================= -->
+<script src="script.js"></script>
+    </body>
+    </html>
+
+          <a class="logo" href="#">
+            <!-- Imagen utilizada como logo -->
+            <img src="logo.png"/>
+            <span data-template-id="brand-name" class="canva-text title-font text-lg font-bold" style="color: rgb(63, 48, 42); font-weight: 700; font-style: normal; font-size: 16px;">TechIY</span> </a>
+        </a>
+    </div>
+
+
+
+
+        
+
+
+
+</html>
